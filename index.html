@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Train Schedule</title>
+	<script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+
+			<h1>Next Train</h1>
+			<p></p>
+		</div>
+	</div>
+
+	<div class="container">
+			<div class="row">
+				<div class="container">
+					<div class="panel panel-primary">
+						<table class="table-table-bordered">
+							<div class="panel-heading">Schedule</div>
+							<thead>
+							<tr>
+								<th>Transit Line</th>
+								<th>Destination</th>
+								<th>First Transport</th>
+								<th>Departures (min)</th>
+								<th>Time to Next </th>
+							</tr>
+							</thead>
+						</table>
+
+					</div>
+				</div>	
+
+			</div>
+		</div>	
+
+			<div class="container">
+				<div class="panel panel-primary">
+					<div class="panel-heading">Add Info</div>
+
+					<form>
+						<div class="form-group">
+							<label for = "line">Line Name</label>
+							<input type="line" class="form-control" id="metroLine" placeholder="Metro Line">
+						</div>
+
+						<div class="form-group">
+							<label for = "Destination">Destination</label>
+							<input type="Destination" class="form-control" id="Destination" placeholder="Destination">
+						</div>
+
+						<div class="form-group">
+							<label for = "firstRoute">First Route</label>
+							<input type="firstRoute" class="form-control" id="firstRoute" placeholder="First Route">
+						</div>
+
+						<div class="form-group">
+							<label for = "frequency">Frequency</label>
+							<input type="frequency" class="form-control" id="frequency" placeholder="Frequency">
+						</div>
+
+						<button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
+					</form>
+				</div>
+			</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.0.min.js
+"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="assets/app.js"></script>	
+</body>
+</html>
