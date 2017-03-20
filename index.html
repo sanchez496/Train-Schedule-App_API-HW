@@ -22,17 +22,22 @@
 					<div class="panel panel-primary">
 						<table class="table-table-bordered">
 							<div class="panel-heading">Schedule</div>
-							<thead>
+							<div class="panel-body">
+              				<table class="table table-hover" id='Transit-table'>
+                			<thead>
 							<tr>
 								<th>Transit Line</th>
-								<th>Destination</th>
-								<th>First Transport</th>
-								<th>Departures (min)</th>
-								<th>Time to Next </th>
+								<th>Destination</td>
+								<td>First Transport</td>
+								<td>Frequency (min)</td>
+								<td>Time to Next </td>
 							</tr>
-							</thead>
-						</table>
 
+							</thead>
+                			<tbody>
+                			</tbody>
+             				 </table>
+							</div>
 					</div>
 				</div>	
 
@@ -51,7 +56,7 @@
 
 						<div class="form-group">
 							<label for = "Destination">Destination</label>
-							<input type="Destination" class="form-control" id="Destination" placeholder="Destination">
+							<input type="Destination" class="form-control" id="destination" placeholder="Destination">
 						</div>
 
 						<div class="form-group">
