@@ -20,10 +20,12 @@
   var firstRoute = "";
   var frequency = "";
 
-  // collect input data from html
+  // collect input data from html by submit button
 
 $("#submitButton").on("click", function (event) {
   event.preventDefault();
+
+  //caputures user input values
 
   var line = $("#metroLine").val().trim();
   var destination = $("#destination").val().trim();
@@ -50,9 +52,12 @@ $("#submitButton").on("click", function (event) {
 
   });
 
+// time tracking
 
 
-// });
+
+
+// sends data from firebase to frontend
 
 database.ref().on("child_added", function(childSnapshot, prevChildKey){ 
 
@@ -66,10 +71,10 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey){
 
 
 // Store everything into a variable.
-  var empName = childSnapshot.val().name;
-  var empRole = childSnapshot.val().role;
-  var empStart = childSnapshot.val().start;
-  var empRate = childSnapshot.val().rate;
+  // var empName = childSnapshot.val().name;
+  // var empRole = childSnapshot.val().role;
+  // var empStart = childSnapshot.val().start;
+  // var empRate = childSnapshot.val().rate;
 
 
 
